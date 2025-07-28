@@ -73,10 +73,7 @@ html[data-theme="dark"] {
 }
 
 .active-nav {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+  @apply underline decoration-wavy decoration-2 underline-offset-4;
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
