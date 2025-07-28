@@ -1,0 +1,70 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/config";
+
+const title = "About";
+---
+
+<Layout title={`${title} | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content">
+    <section id="about" class="app-prose mb-28 max-w-app prose-img:border-0">
+      <h1 class="text-2xl tracking-wider sm:text-3xl mb-8">{title}</h1>
+      
+      <div class="flex flex-col sm:flex-row gap-8 mb-8">
+        <div class="flex-shrink-0">
+          <img 
+            src="/assets/matt-tanya.png" 
+            alt="Matt and Tanya Jefferson" 
+            class="w-64 h-auto rounded-lg border-2 border-border object-cover transition-all duration-300 hover:scale-105 hover:border-accent"
+          />
+        </div>
+        <div class="flex-1">
+          <p class="text-lg leading-relaxed">
+            Hi, I'm Matt Jefferson, a tech enthusiast and software developer with a passion for artificial intelligence and building innovative solutions that leverage the power of AI.
+          </p>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Background</h2>
+        <p>
+          I'm a technologist with experience in web development, system architecture, and AI integration. I'm particularly interested in the intersection of artificial intelligence and software development, exploring how AI can transform the way we build and interact with technology.
+        </p>
+
+        <h2>My Focus Areas</h2>
+        <ul>
+          <li><strong>Practical AI Applications</strong>: Building real-world solutions that leverage AI to solve complex problems</li>
+          <li><strong>Developer Tooling</strong>: Creating and using AI-powered tools that enhance developer productivity</li>
+          <li><strong>AI Integration</strong>: Implementing AI capabilities into existing systems and workflows</li>
+          <li><strong>Machine Learning</strong>: Exploring emerging trends and frameworks in the ML ecosystem</li>
+        </ul>
+
+        <h2>What I Write About</h2>
+        <p>On this blog, you'll find posts about:</p>
+        <ul>
+          <li>AI insights and emerging trends</li>
+          <li>Technical tutorials on AI tools and frameworks</li>
+          <li>Software development best practices and patterns</li>
+          <li>AI project updates and learnings from real-world implementations</li>
+          <li>Industry observations on the intersection of AI and technology</li>
+          <li>Personal experiences building AI-powered applications</li>
+        </ul>
+
+        <h2>Connect With Me</h2>
+        <p>
+          I'm always excited to discuss AI, technology, and innovative projects. Whether you're working on AI implementations, exploring new frameworks, or just curious about the future of technology, I'd love to connect.
+        </p>
+        <p>
+          You can find me on <a href="https://github.com/mattjefferson">GitHub</a>, <a href="https://www.linkedin.com/in/mattjefferson/">LinkedIn</a>, or <a href="https://x.com/mjefferson">X</a>.
+        </p>
+        <p>Thanks for visiting!</p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
