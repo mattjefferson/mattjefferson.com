@@ -24,7 +24,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
-      <div class="flex items-start gap-6">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
         <a href="/about" class="group flex-shrink-0">
           <img 
             src="/assets/matt.jpg" 
@@ -32,8 +32,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-border object-cover object-top transition-all duration-300 hover:scale-105 hover:border-accent"
           />
         </a>
-        <div class="flex-1 min-w-0">
-          <div class="flex items-center gap-3 mb-4">
+        <div class="flex-1 min-w-0 text-center sm:text-left">
+          <div class="flex items-center justify-center sm:justify-start gap-3 mb-4">
             <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
               Hi, I'm Matt 
             </h1>
