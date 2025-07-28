@@ -7,7 +7,7 @@ Hi, I'm Matt Jefferson, a tech enthusiast and software developer with a passion 
 
 ## Background
 
-I'm a software engineer with experience in web development, system architecture, and AI integration. I'm particularly interested in the intersection of artificial intelligence and software development, exploring how AI can transform the way we build and interact with technology.
+I'm a technologist with experience in web development, system architecture, and AI integration. I'm particularly interested in the intersection of artificial intelligence and software development, exploring how AI can transform the way we build and interact with technology.
 
 ## My Focus Areas
 
@@ -20,7 +20,7 @@ I'm a software engineer with experience in web development, system architecture,
 
 On this blog, you'll find posts about:
 
-- AI insights and emerging trends in machine learning
+- AI insights and emerging trends
 - Technical tutorials on AI tools and frameworks
 - Software development best practices and patterns
 - AI project updates and learnings from real-world implementations
