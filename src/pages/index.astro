@@ -24,7 +24,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
-      <div class="flex items-center gap-6 mb-6">
+      <div class="flex items-start gap-6">
         <a href="/about" class="group flex-shrink-0">
           <img 
             src="/assets/matt.jpg" 
@@ -33,38 +33,41 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           />
         </a>
         <div class="flex-1 min-w-0">
-          <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
-            Hi, I'm Matt 
-          </h1>
+          <div class="flex items-center gap-3 mb-4">
+            <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
+              Hi, I'm Matt 
+            </h1>
+            <a
+              target="_blank"
+              href="/rss.xml"
+              class="inline-block"
+              aria-label="rss feed"
+              title="RSS Feed"
+            >
+              <IconRss
+                width={20}
+                height={20}
+                class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
+              />
+              <span class="sr-only">RSS Feed</span>
+            </a>
+          </div>
+
+          <p class="text-lg leading-relaxed mb-4">
+            I'm a tech enthusiast and software developer with a passion for artificial intelligence and building innovative solutions. I explore the intersection of AI and software development, sharing insights on practical applications, emerging trends, and real-world implementations that help developers harness the power of AI.
+          </p>
+
+          {
+            // only display if at least one social link is enabled
+            SOCIALS.length > 0 && (
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+                <Socials />
+              </div>
+            )
+          }
         </div>
       </div>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-
-      <p class="text-lg leading-relaxed max-w-2xl">
-        I'm a tech enthusiast and software developer with a passion for artificial intelligence and building innovative solutions. I explore the intersection of AI and software development, sharing insights on practical applications, emerging trends, and real-world implementations that help developers harness the power of AI.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
     <Hr />
