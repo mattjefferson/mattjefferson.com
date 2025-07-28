@@ -3,35 +3,34 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hi, I'm Matt Jefferson, a tech enthusiast and software developer with a passion for artificial intelligence and building innovative solutions that leverage the power of AI.
 
-![Astro Paper](public/astropaper-og.jpg)
+## Background
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+I'm a software engineer with experience in web development, system architecture, and AI integration. I'm particularly interested in the intersection of artificial intelligence and software development, exploring how AI can transform the way we build and interact with technology.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## My Focus Areas
 
-## Features
+- **Practical AI Applications**: Building real-world solutions that leverage AI to solve complex problems
+- **Developer Tooling**: Creating and using AI-powered tools that enhance developer productivity
+- **AI Integration**: Implementing AI capabilities into existing systems and workflows
+- **Machine Learning**: Exploring emerging trends and frameworks in the ML ecosystem
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## What I Write About
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+On this blog, you'll find posts about:
 
-and so much more.
+- AI insights and emerging trends in machine learning
+- Technical tutorials on AI tools and frameworks
+- Software development best practices and patterns
+- AI project updates and learnings from real-world implementations
+- Industry observations on the intersection of AI and technology
+- Personal experiences building AI-powered applications
 
-## Show your support
+## Connect With Me
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+I'm always excited to discuss AI, technology, and innovative projects. Whether you're working on AI implementations, exploring new frameworks, or just curious about the future of technology, I'd love to connect.
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+You can find me on [GitHub](https://github.com/mattjefferson), [LinkedIn](https://www.linkedin.com/in/mattjefferson/), or [X](https://x.com/mjefferson).
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Thanks for visiting!
