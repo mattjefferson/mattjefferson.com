@@ -48,7 +48,7 @@ pnpm run preview
 
 ### Project Structure
 
-- `/src/content/blog/` - Contains all blog posts in markdown format
+- `/src/data/blog/` - Contains all blog posts in markdown format
 - `/src/pages/` - Contains page templates and routing
 - `/src/components/` - Reusable UI components
 - `/src/layouts/` - Page layouts and templates
@@ -58,14 +58,14 @@ pnpm run preview
 
 1. **Adding a new blog post**:
 
-   - Create a new markdown file in `/src/content/blog/`
-   - Include proper frontmatter (title, description, pubDate, etc.)
+   - Create a new markdown file in `/src/data/blog/`
+   - Include proper frontmatter (title, description, pubDatetime, etc.)
    - Format dates in ISO-8601 format: `YYYY-MM-DDTHH:MM:SS+HH:MM`
    - Format tags as arrays: `tags: ["tag1", "tag2"]`
 
 2. **Modifying site configuration**:
 
-   - Edit `/src/consts.ts` for global site constants
+   - Edit `/src/config.ts` for global site constants
 
 3. **Styling changes**:
 
