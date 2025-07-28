@@ -1,7 +1,7 @@
-@import "tailwindcss";
 @import "./typography.css";
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root,
 html[data-theme="light"] {
@@ -20,29 +20,38 @@ html[data-theme="dark"] {
   --border: #ab4b08;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-}
-
 @layer base {
   * {
-    @apply border-border outline-accent/75;
+    border-color: var(--border);
+    outline-color: var(--accent);
     scrollbar-width: auto;
-    scrollbar-color: var(--color-muted) transparent;
+    scrollbar-color: var(--muted) transparent;
   }
   html {
-    @apply overflow-y-scroll scroll-smooth;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--background);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    color: var(--foreground);
+  }
+  body ::selection {
+    background-color: var(--accent);
+    color: var(--background);
   }
   a,
   button {
-    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+    outline-offset: 1px;
+    outline-color: var(--accent);
+  }
+  a:focus-visible,
+  button:focus-visible {
+    text-decoration: none;
+    outline: 2px dashed var(--accent);
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -50,16 +59,24 @@ html[data-theme="dark"] {
   }
   section,
   footer {
-    @apply mx-auto max-w-app px-4;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
-@utility max-w-app {
-  @apply max-w-3xl;
+/* Custom utility for max-width */
+.max-w-app {
+  max-width: 48rem;
 }
 
 .active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-4;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */

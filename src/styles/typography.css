@@ -1,4 +1,4 @@
-@plugin '@tailwindcss/typography';
+/* Typography plugin styles are handled by the Tailwind config */
 
 @layer base {
   /* ===== Override default Tailwind Typography styles ===== */
@@ -67,19 +67,32 @@
     }
 
     code {
-      @apply rounded bg-muted/75 p-1 break-words text-foreground before:content-none after:content-none;
+      @apply rounded p-1 break-words text-foreground before:content-none after:content-none;
+      background-color: var(--muted);
+      opacity: 0.75;
     }
 
     .astro-code code {
-      @apply flex-[1_0_100%] bg-inherit p-0;
+      @apply bg-inherit p-0;
+      flex: 1 0 100%;
     }
 
     blockquote {
-      @apply border-s-accent/80 break-words opacity-80;
+      @apply break-words opacity-80;
+      border-left: 4px solid var(--accent);
     }
 
     details {
-      @apply inline-block cursor-pointer text-foreground select-none [&_p]:hidden [&_ul]:!my-0;
+      @apply inline-block cursor-pointer text-foreground select-none;
+    }
+
+    details p {
+      display: none;
+    }
+
+    details ul {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
     }
 
     summary {
@@ -93,24 +106,38 @@
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   .astro-code {
-    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
+    @apply flex border outline-border;
+    background-color: var(--shiki-light-bg);
+    color: var(--shiki-light);
+  }
+
+  .astro-code span {
+    color: var(--shiki-light);
   }
 
   html[data-theme="dark"] .astro-code {
-    @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+    color: var(--shiki-dark);
+  }
+
+  html[data-theme="dark"] .astro-code span {
+    color: var(--shiki-dark);
   }
 
   /* Styles for Shiki transformers */
   /* https://shiki.style/packages/transformers */
   .astro-code {
     .line.diff.add {
-      @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+      @apply relative inline-block w-full before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+      background-color: rgba(34, 197, 94, 0.2);
     }
     .line.diff.remove {
-      @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+      @apply relative inline-block w-full before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+      background-color: rgba(239, 68, 68, 0.2);
     }
     .line.highlighted {
-      @apply inline-block w-full bg-slate-400/20;
+      @apply inline-block w-full;
+      background-color: rgba(148, 163, 184, 0.2);
     }
     .highlighted-word {
       @apply rounded-sm border border-border px-0.5 py-px;
