@@ -24,9 +24,18 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Hi, I'm Matt 
-      </h1>
+      <div class="flex items-center gap-6 mb-6">
+        <a href="/about" class="group flex-shrink-0">
+          <img 
+            src="/assets/matt.jpg" 
+            alt="Matt Jefferson" 
+            class="size-20 rounded-full border-2 border-border object-cover transition-all duration-300 hover:scale-105 hover:border-accent sm:size-24"
+          />
+        </a>
+        <h1 class="text-4xl font-bold sm:text-5xl">
+          Hi, I'm Matt 
+        </h1>
+      </div>
       <a
         target="_blank"
         href="/rss.xml"
