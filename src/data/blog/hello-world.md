@@ -6,7 +6,7 @@ tags: ["introduction", "blog", "ai"]
 draft: false
 ---
 
-Welcome to my blog! I'm Matt Jefferson, and this is where I'll be sharing my thoughts on artificial intelligence, technology, and software development.
+I'm Matt Jefferson, and this is where I'll be sharing my thoughts on artificial intelligence, technology, and software development.
 
 ## What to Expect
 
