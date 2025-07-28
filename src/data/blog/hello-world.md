@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 description: "Welcome to my personal blog where I share thoughts on AI, technology, and software development."
-pubDate: 2025-01-28T22:57:00-06:00
+pubDatetime: 2025-01-28T22:57:00-06:00
 tags: ["introduction", "blog", "ai"]
 draft: false
 ---
