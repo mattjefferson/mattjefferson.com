@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://mattjefferson.com/", // replace this with your deployed domain
   author: "Matt Jefferson",
   profile: "",
-  desc: "Matt Jefferson's site,
+  desc: "Matt Jefferson's site",
   title: "Matt Jefferson",
   ogImage: "",
   lightAndDarkMode: true,
