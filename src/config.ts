@@ -2,9 +2,9 @@ export const SITE = {
   website: "https://mattjefferson.com/", // replace this with your deployed domain
   author: "Matt Jefferson",
   profile: "",
-  desc: "Personal blog of Matt Jefferson, tech enthusiast.",
+  desc: "Matt Jefferson's site,
   title: "Matt Jefferson",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,

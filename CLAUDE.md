@@ -27,11 +27,6 @@ This document contains important instructions and notes for Claude when working 
 - When fixing dependency issues, always upgrade to the latest compatible versions
 - Prioritize staying current with the ecosystem, even if it requires more work to adapt
 
-### IMPORTANT: Development Server Limitation
-
-- **DO NOT run `pnpm run dev`** in agent mode - this will create an endless loop and stop the agent from working properly
-- Instead, use `pnpm run build` to verify your changes
-
 ## Development Process
 
 ### Testing Changes
@@ -78,12 +73,12 @@ pnpm run preview
 
 5. **Fixing broken images**:
 
-   - Blog posts reference images in the `/public/assets/img/` directory structure
-   - The original files can be found in `/temp-repos/mjeffersoncom/assets/img/`
+   - Blog posts reference images in the `/public/assets/img/blog/` directory structure
+   - Profile images are stored in `/public/assets/img/profiles/`
    - Images must be copied to the matching public directory structure
    - Fixed images should be committed to the repository
    - Use `find` command to locate the original images
-   - Common image paths follow the pattern: `/assets/img/YEAR/POST-NAME/IMAGE.jpg`
+   - Blog image paths follow the pattern: `/assets/img/blog/IMAGE.jpg` (flat structure, no year folders)
 
 6. **Dependency Updates**:
    - Always use proper tooling to check for latest versions:
